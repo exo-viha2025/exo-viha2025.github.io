@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Xintao Chao</a><sup>*1</sup>,</span>
+            <span class="author-block">
+              <a href="https://charon-bo.github.io/">Shilong Mu</a><sup>*†1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scpsyl.github.io">Yushan Liu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.shoujie.top/">Shoujie Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.researchgate.net/profile/Chuqiao-Lyu">Chuqiao Lyu</a><sup>†1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra">Xiao-Ping Zhang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ssr-group.net/">Wenbo Ding</a><sup>†1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shenzhen International Graduate School, Tsinghua University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.01543"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.01543"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video(soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/fig1.jpg" alt="Teaser Image" style="width: 100%; height: auto;">
+      <!-- <h2 class="subtitle has-text-centered">
+         Overview of the <span class="dnerf">Exo-ViHa</span> system.
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    <!-- Abstract -->
+    <div class="columns is-centered">
+      <div class="column is-three-quarters has-text-centered">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified is-size-5">
+          <p>
+            Imitation learning has emerged as a powerful paradigm for robot skills learning. 
+            However, traditional data collection systems for dexterous manipulation face challenges, including a lack of balance between acquisition efficiency, consistency and accuracy. 
+          </p>
+          <p>
+            To address these issues, we introduce Exo-ViHa, an innovative 3D-printed exoskeleton system
+             that enables users to collect data from a first-person perspective while providing real-time
+              haptic feedback. This system combines a 3D-printed modular structure with a slam camera, 
+              a motion capture glove, and a wrist-mounted camera. Various dexterous hands can be installed
+               at the end, enabling it to simultaneously collect the posture of the end effector, 
+               hand movements, and visual data. By leveraging the first-person perspective and direct
+                interaction, the exoskeleton enhances the task realism and haptic feedback, improving 
+                the consistency between demonstrations and actual robot deployments. In addition, 
+                it has cross-platform compatibility with various robotic arms and dexterous hands.
+                 Experiments show that the system can significantly improve the success rate and efficiency
+                  of data collection for dexterous manipulation tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/table.jpg" alt="Teaser Image" style="width: 100%; height: auto;">
+      <figcaption class="has-text-centered">To properly evaluate our contributions, we evaluate our
+         system against existing data collection solutions, considering several critical dimensions
+          as illustrated in Table I.</figcaption>
+    </div>
+  </div>
+
+</section>
+    <!--/ Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- 标题 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2 highlight" id="Exoskeleton System">Exoskeleton System</h2>
+      </div>
+    </div>
+
+    <!-- 图片 + 视频 -->
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        <img src="./static/images/fig2.jpg" alt="Exoskeleton Image" class="media-content">
+      </div>
+    </div>
+    
+      
+    <div class="columns is-vcentered">
+      <!-- 左侧文字 -->
+      <div class="column is-half ">
+        <p class="content">
+          The exoskeleton was fabricated by 3D printing using PLA material. 
+          The overall weight of the exoskeleton system is about 0.425kg when 
+          the dexterity hand is not installed, and the specific weight when 
+          using depends on the weight of the dexterity hand assembled
+            (for example, the weight is about 1.1kg after the dexterity hand is installed).<br>
+            The time from wearing the exoskeleton system to starting data collection is about 1 minute,
+              which greatly improves the efficiency of data collection.
+        </p>
+      </div>
+      
+      <!-- 右侧视频 -->
+      <div class="column is-half has-text-centered">
+        <video autoplay controls muted loop playsinline height="100%" class="media-content">
+          <source src="./static/videos/Taking.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- 标题 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2 highlight" id="Details of Exo-ViHa system">Details of Exo-ViHa system</h2>
+      </div>
+    </div>
+
+    <!-- 图片  -->
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        <img src="./static/images/detail.png" alt="Exoskeleton Image" class="media-content">
+        <div class="column content has-text-left is-size-5">
+          <p>
+            (a) Demonstration of the exoskeleton used for data collection and schematic
+            diagram of the first-person perspective and haptic feedback. (b) Illustration of the working space range. 
+            (c) The power source and microcomputer are placed into a backpack, allowing the system to be
+            used for data collection in outdoor environments.
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="subtitle is-3" id="Visual consistency">Visual consistency</h3>
+      </div>
+    </div>
+    
+    <!-- 第一行：列标题 -->
+    <div class="columns is-centered">
+      <div class="column is-2 has-text-left">
+         <!-- 适当调整位置 -->
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <h5 class="subtitle is-5">Camera #1</h5>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <h5 class="subtitle is-5">Camera #2</h5>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <h5 class="subtitle is-5">Wrist Camera</h5>
+      </div>
+    </div>
+    
+    <!-- 第一行视频 -->
+    <div class="columns is-centered">
+      <div class="column is-2 has-text-left">
+        <h5 class="title is-5" style="margin-top: 40%;">Collection</h5> <!-- 适当调整位置 -->
+      </div>
+      <div class="column is-one-third">
+        <video width="100%" autoplay controls muted loop playsinline>
+          <source src="./static/videos/consi/3月23日(1).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video width="100%" autoplay controls muted loop playsinline>
+          <source src="./static/videos/consi/3月23日.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video width="100%" autoplay controls muted loop playsinline>
+          <source src="./static/videos/consi/3月23日(2).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    
+    <!-- 第二行视频 -->
+    <div class="columns is-centered">
+      <div class="column is-2 has-text-left">
+        <h5 class="title is-5" style="margin-top: 40%;">Deployment</h5>
+      </div>
+      <div class="column is-one-third">
+        <video width="100%" autoplay controls muted loop playsinline>
+          <source src="./static/videos/consi/3月23日(5).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video width="100%" autoplay controls muted loop playsinline>
+          <source src="./static/videos/consi/3月23日(4).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video width="100%" autoplay controls muted loop playsinline>
+          <source src="./static/videos/consi/3月23日(3).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="column content has-text-left is-size-5">
+      <p>
+        The visual information captured by the camera #1, camera #2 and the wrist camera
+         is basically consistent during both the data collection
+        and deployment phases.
+      </p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <!-- Data Collection -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-2">Data Collection Efficiency</h2>
+      
+      <div class="column is-full has-text-centered">
+        <img src="./static/images/fig4.jpg" alt="Exoskeleton Image" class="media-content">
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered has-text-justified is-size-5">
+          <div class="column content">
+            <p>
+              (a) Multi-contact interaction scenarios demonstrating human action, Exo-ViHa and teleoperation;
+              (b) Quantitative time efficiency comparison across methods. (c) Pick and place scenario 
+              demonstrating the execution process for teleoperation,Exo-ViHa, and human action.
+            </p>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</div>
+</section>
+<section class="section">
+  <!-- Data Collection -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-2">Experiments</h2>
+      <h3 class="subtitle is-3 has-text-left">Pick&Place</h3>
+      <div class="columns is-centered">
+        <!-- 视频 1 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(5).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 2 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(6).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 3 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(7).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 4 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <!-- 视频 1 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(1).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 2 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(2).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 3 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(3).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 4 -->
+        <div class="column is-one-quarter">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/pick/3月23日(4).mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <h3 class="subtitle is-3 has-text-left">Wipe</h3>
+      <div class="columns is-centered">
+        <!-- 视频 1 -->
+        <div class="column is-half">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/wipe/3月23日(1).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 2 -->
+        <div class="column is-half">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/wipe/3月23日.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <h3 class="subtitle is-3 has-text-left">Strike</h3>
+      <div class="columns is-centered">
+        <!-- 视频 1 -->
+        <div class="column is-half">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/strike/3月23日(2).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 2 -->
+        <div class="column is-half">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/strike/strike.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <h3 class="subtitle is-3 has-text-left">Sort</h3>
+      <div class="columns is-centered">
+        <!-- 视频 1 -->
+        <div class="column is-half">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/sort/3月23日(8).mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- 视频 2 -->
+        <div class="column is-half">
+          <video width="100%" height="auto" autoplay controls muted loop playsinline>
+            <source src="./static/videos/sort/3月23日.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-3" id="Visual consistency">Results</h3>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <img src="./static/images/table1.jpg" alt="Teaser Image" style="width: 100%; height: auto;">
+        <figcaption class="has-text-left is-size-5">
+          we conducted tests on various task types for 30 iterations, as summarized in Table II.
+           The system demonstrates reduced execution times and higher task completionrates 
+           across nearly all tasks.During the deployment phase,the success rate for each
+           task was generally around 80%. </figcaption>
+      </div>
+      
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chao2025exo,
+      title={Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning},
+      author={Chao, Xintao and Mu, Shilong and Liu, Yushan and Li, Shoujie and Lyu, Chuqiao and Zhang, Xiao-Ping and Ding, Wenbo},
+      journal={arXiv preprint arXiv:2503.01543},
+      year={2025}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
